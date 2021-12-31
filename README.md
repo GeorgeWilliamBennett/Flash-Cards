@@ -42,14 +42,7 @@ To use this app make sure to have <a href="https://www.python.org/downloads/">Py
 
 Navigate to where these files have been downloaded
 `cd your_file_path_here`
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 87130438cefcb61bf64d331063cd5c825bf7cb47
-=======
-
->>>>>>> parent of 8713043 (readme)
 <br>
 
 Install virtualenv
@@ -64,26 +57,12 @@ Create your own virtual environment
 
 Activate your virtual environment (Windows Terminal)
 `source env/scripts/activate.bat`
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 87130438cefcb61bf64d331063cd5c825bf7cb47
-=======
-
->>>>>>> parent of 8713043 (readme)
 <br>
 
 Activate your virtual environment (Windows using GitBash)
 `source env/scripts/activate`
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 87130438cefcb61bf64d331063cd5c825bf7cb47
-=======
-
->>>>>>> parent of 8713043 (readme)
 <br>
 
 Activate your virtual environment (Apple & Linux Terminals)
@@ -100,11 +79,7 @@ Afterwards install the necessary packages for this application. These are just `
 <br>
 
  After this install the required packages for this application (these are just `flask` and `sqlite3`). 
-<<<<<<< HEAD
-
-=======
  
->>>>>>> parent of 8713043 (readme)
 <br>
 
 `pip install -r requirements.txt`
@@ -119,17 +94,9 @@ Now all you have to do is type this command in the terminal to run the app and i
 
 <br>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-The following should pop up in the terminal. (The address may be different on your machine.)
-=======
+
 The following should pop up in the terminal. (The address may be different on your machine.)<br>
 
->>>>>>> 87130438cefcb61bf64d331063cd5c825bf7cb47
-=======
-The following should pop up in the terminal. (The address may be different on your machine.)<br>
-
->>>>>>> parent of 8713043 (readme)
 `Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
 
 <br>
@@ -138,7 +105,7 @@ Lastly go to Google Chrome or whatever browser you use and pass in the link give
 
 <br>
 
-<img alt='main menu' scr='/pics/Main-Menu.png' style='text-align: center;'/>
+<img alt='main menu' scr='./pics/Main-Menu.png' style='text-align: center;'/>
 
 <br>
 
@@ -148,7 +115,7 @@ To use the app first click on the button that says "Create a New Set of Cards". 
 
 <br>
 
-<img alt='write a flash card' scr='/pics/Create-Card.png' style='text-align: center;'/>
+<img alt='write a flash card' scr='./pics/Create-Card.png' style='text-align: center;'/>
 
 <br>
 
@@ -156,7 +123,7 @@ Now you are enabled to practice! After creating a card you will automatically be
 
 <br>
 
-<img alt='warning prompt' scr='/pics/Create-Card.png' style='text-align: center;'/>
+<img alt='warning prompt' scr='./pics/Create-Card.png' style='text-align: center;'/>
 
 <br>
 
