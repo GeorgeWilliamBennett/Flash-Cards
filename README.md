@@ -70,7 +70,7 @@ Lastly go to Google Chrome or whatever browser you use and pass in the link give
 
 <br> 
 
-<div style='text-align: center'><img src='./pics/Main-Menu.jpg' style='height: 400px;'/> <br></div>
+<div align='center'><img src='./pics/Main-Menu.jpg' style='height: 400px;'/> <br></div>
 
 # Tutorial
 
