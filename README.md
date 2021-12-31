@@ -59,14 +59,14 @@ Now all you have to do is type this command in the terminal to run the app and i
 The following should pop up in the terminal. (The address may be different on your machine.)<br>
 `Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)` <br>
 Lastly go to Google Chrome or whatever browser you use and pass in the link given to you in the terminal. Viola! The app is running! <br>
-<img src='./pics/Main-Menu.jpg' style='margin: auto; height: 400px;'/> <br>
+<img src='./pics/Main-Menu.jpg' style='align: center; height: 400px;'/> <br>
 # Tutorial
 
 To use the app first click on the button that says "Create a New Set of Cards". Here you can name a set of flash cards. After creating a set you will automatically be prompted to fill out your first card. Simply type in the question and the answer you wish to have on your card.
 
 <br>
 
-<img alt='write a flash card' src='./pics/Create-Card.jpg' style='margin: auto; height: 400px;'/>
+<img alt='write a flash card' src='./pics/Create-Card.jpg' style='align: center; height: 400px;'/>
 
 <br>
 
@@ -74,7 +74,7 @@ Now you are enabled to practice! After creating a card you will automatically be
 
 <br>
 
-<img alt='warning prompt' src='./pics/Delete-Warning.jpg' style='margin: auto;'>
+<img alt='warning prompt' src='./pics/Delete-Warning.jpg' style='align: center;'>
 
 <br>
 
