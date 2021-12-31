@@ -39,13 +39,14 @@ I used several of my skill-sets in this project including:
 To use this app make sure to have <a href="https://www.python.org/downloads/">Python</a> Installed on your computer. Once you have done this go to the command prompt and navigate to where these files have been downloaded. Next make sure to install the python package `virtualenv`. Then create your own personal virtual environment and activate it. You can do this by typeing the following commands. <br>
 
 Navigate to where these files have been downloaded<br>
-`cd your_file_path_here`<br>
+`$cd your_file_path_here`<br>
 
 Install virtualenv <br>
 `pip install virtualenv` <br>
 
 Create your own virtual environment <br>
 `venv env` <br>
+
 Activate your virtual environment (Windows Terminal) <br>
 `source env/scripts/activate.bat` <br>
 Activate your virtual environment (Windows using GitBash) <br>
@@ -64,11 +65,12 @@ Now all you have to do is type this command in the terminal to run the app and i
 
 The following should pop up in the terminal. (The address may be different on your machine.)<br>
 `Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)` <br>
+
 Lastly go to Google Chrome or whatever browser you use and pass in the link given to you in the terminal. Viola! The app is running! <br>
 
 <br> 
 
-<p style='text-align: center'><img src='./pics/Main-Menu.jpg' style='height: 400px;'/> <br></p>
+<p style='align: center'><img src='./pics/Main-Menu.jpg' style='height: 400px;'/> <br></p>
 
 # Tutorial
 
@@ -76,7 +78,7 @@ To use the app first click on the button that says "Create a New Set of Cards". 
 
 <br>
 
-<p style='text-align: center'><img alt='write a flash card' src='./pics/Create-Card.jpg' style='height: 400px;'/></p>
+<p style='align: center'><img alt='write a flash card' src='./pics/Create-Card.jpg' style='height: 400px;'/></p>
 
 <br>
 
@@ -84,7 +86,7 @@ Now you are enabled to practice! After creating a card you will automatically be
 
 <br>
 
-<p style='text-align: center'><img alt='warning prompt' src='./pics/Delete-Warning.jpg'></p>
+<p style='align: center'><img alt='warning prompt' src='./pics/Delete-Warning.jpg'></p>
 
 <br>
 
