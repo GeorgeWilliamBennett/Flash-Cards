@@ -66,7 +66,7 @@ To use the app first click on the button that says "Create a New Set of Cards". 
 
 <br>
 
-<img alt='write a flash card' src='./pics/Create-Card.jpg' style='text-align: center;' />
+<img alt='write a flash card' src='./pics/Main-Menu.jpg' style='text-align: center; height: 400px'/>
 
 <br>
 
@@ -74,7 +74,7 @@ Now you are enabled to practice! After creating a card you will automatically be
 
 <br>
 
-<img alt='warning prompt' src='./pics/Create-Card.jpg' style='text-align: center;'>
+<img alt='warning prompt' src='./pics/Warning-Prompt.jpg' style='text-align: center; height:400px'>
 
 <br>
 
