@@ -1,7 +1,6 @@
 # Flash-Cards
 
 ## A small app to create flash cards and practice with!
-
 <br>
 
 # Table of Contents
@@ -11,13 +10,11 @@
 * <a href='#Setup'>Setup</a>
 * <a href='#Tutorial'>Tutorial</a>
 * <a href='#Contact'>Contact</a>
-
 <br>
 
 # Introduction
 
 I was inspired to make this app because I am in college and flash cards are a useful tool. This application allows one to create sets of flash cards, populate those sets of cards, practice with them, delete cards, and delete sets of cards.
-
 <br>
 
 # Skills
@@ -31,70 +28,58 @@ I used several of my skill-sets in this project including:
 * HTML
 * CSS
 * UX/UI Design
-
 <br>
 
 # Setup
 
 To use this app make sure to have <a href="https://www.python.org/downloads/">Python</a> Installed on your computer. Once you have done this go to the command prompt and navigate to where these files have been downloaded. Next make sure to install the python package `virtualenv`. Then create your own personal virtual environment and activate it. You can do this by typeing the following commands. 
-
 <br>
 
 Navigate to where these files have been downloaded
 `cd your_file_path_here`
-
 <br>
 
 Install virtualenv
 `pip install virtualenv` 
-
 <br>
 
 Create your own virtual environment
 `venv env`
-
 <br>
 
 Activate your virtual environment (Windows Terminal)
 `source env/scripts/activate.bat`
-
 <br>
 
 Activate your virtual environment (Windows using GitBash)
 `source env/scripts/activate`
-
 <br>
 
 Activate your virtual environment (Apple & Linux Terminals)
 `source env/bin/activate`
-
 <br>
 
 Afterwards install the necessary packages for this application. These are just `flask` and `sqlite3`.
-
 <br>
 
 `pip install -r requirements.txt` or `pip install flask, sqlite3`
-
 <br>
 
  After this install the required packages for this application (these are just `flask` and `sqlite3`). 
- 
 <br>
 
 `pip install -r requirements.txt`
-
 <br>
 
 Now all you have to do is type this command in the terminal to run the app and it will run a virtual server on your local machine. Most likely local host 5000. Simply run the `app.py` file.
-
 <br>
 
 `python app.py`
 
 <br>
 
-The following should pop up in the terminal. (The address may be different on your machine.)
+The following should pop up in the terminal. (The address may be different on your machine.)<br>
+
 `Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
 
 <br>
