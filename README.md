@@ -1,17 +1,25 @@
 # Flash-Cards
+
 ## A small app to create flash cards and practice with!
+
 <br>
+
 # Table of Contents
+
 * <a href='#Introduction'>Introduction</a>
 * <a href='#Skills'>Skills</a>
 * <a href='#Setup'>Setup</a>
 * <a href='#Tutorial'>Tutorial</a>
 * <a href='#Contact'>Contact</a>
 <br>
+
 # Introduction
+
 I was inspired to make this app because I am in college and flash cards are a useful tool. This application allows one to create sets of flash cards, populate those sets of cards, practice with them, delete cards, and delete sets of cards.
 <br>
+
 # Skills
+
 I used several of my skill-sets in this project including:
 * Python
 * Flask
@@ -22,7 +30,9 @@ I used several of my skill-sets in this project including:
 * CSS
 * UX/UI Design
 <br>
+
 # Setup
+
 To use this app make sure to have <a href="https://www.python.org/downloads/">Python</a> Installed on your computer. Once you have done this go to the command prompt and navigate to where these files have been downloaded. Next make sure to install the python package `virtualenv`. Then create your own personal virtual environment and activate it. You can do this by typeing the following commands. 
 <br>
 Navigate to where these files have been downloaded
@@ -62,6 +72,7 @@ Lastly go to Google Chrome or whatever browser you use and pass in the link give
 <br>
 
 # Tutorial
+
 To use the app first click on the button that says "Create a New Set of Cards". Here you can name a set of flash cards. After creating a set you will automatically be prompted to fill out your first card. Simply type in the question and the answer you wish to have on your card.
 <br>
 <img alt='write a flash card' scr='./pics/Create-Card.png' style='text-align: center;'>
@@ -70,7 +81,9 @@ Now you are enabled to practice! After creating a card you will automatically be
 <br>
 <img alt='warning prompt' scr='./pics/Create-Card.png' style='text-align: center;'>
 <br>
+
 # Contact
+
 My name is George Bennett. I completed a datascience bootcamp with <a href='https://flatironschool.com/'>Flat Iron School</a> and am currently in college pursuing a bachelor's in computer science. My goal is to one day be a professional software engineer or datascientist. 
 <br>
 <a href='https://github.com/GeorgeWilliamBennett/'>GitHub</a>
