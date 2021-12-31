@@ -45,7 +45,7 @@ Install virtualenv <br>
 `pip install virtualenv` <br>
 
 Create your own virtual environment <br>
-`venv env` <br>
+`virtualenv env` <br>
 
 Activate your virtual environment (Windows Terminal) <br>
 `source env/scripts/activate.bat` <br>
