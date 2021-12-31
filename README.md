@@ -66,7 +66,7 @@ To use the app first click on the button that says "Create a New Set of Cards". 
 
 <br>
 
-<img alt='write a flash card' src='./pics/Main-Menu.jpg' style='text-align: center; height: 400px'/>
+<img alt='write a flash card' src='./pics/Main-Menu.png' style='text-align: center; height: 400px'/>
 
 <br>
 
