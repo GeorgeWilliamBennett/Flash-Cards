@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Flash Cards</title>
+{% endblock %}
+
+{% block main %}
+    <h2 class='page-header'>Main Menu</h2>
+    <p>Let's Get Started</p>
+{% endblock %}
+
+{% block nav %} 
+    <a href='/create-set-prompt'><button class='neutral-button'>Create a New Set of Cards</button></a><br>
+    <a href='/choose-set-prompt'><button class='practice-button'>Select a Set of Cards</button></a><br>
+    <a href= '/delete-set-prompt'><button class='delete-button'>Delete a Set of Cards</button></a>
+{% endblock %}

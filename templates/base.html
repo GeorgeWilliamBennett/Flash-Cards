@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    
+    <header id='header'>
+        <h1>Flash Cards</h1>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <nav>
+            {% block nav %}{% endblock %}
+        </nav>
+        <br>
+        <br>
+        <br>
+        <p style='font-size: 12px;'>
+            Created by: George Bennett<br><a href='https://github.com/GeorgeWilliamBennett/'>GitHub</a>
+        </p>
+    </footer>
+    {% block javascript %}{% endblock %}
+</body>
+</html>

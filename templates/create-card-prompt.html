@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Create a Flashcard</title>
+{% endblock %} 
+
+{% block main %}
+    <h2 class='page-header'>Create a Flashcard</h2>
+    <form id='create-card-form' action="/create-card/{{set_name}}" method='POST'>
+        <h3>Question</h3>
+        <textarea id ='question-prompt' name='question-prompt' placeholder='Card Question'></textarea>
+        <br>
+        <h3>Answer</h3>
+        <textarea id='answer-prompt' name='answer-prompt' placeholder='Card Answer'></textarea>
+        <br>
+        <input class='submit-button' type='submit' value='Create Card'>
+    </form>
+    <br>
+    <br>
+    <p class='page-sub-header'>Set: {{set_name.replace('_', ' ')}}</p>
+{% endblock %} 
+
+
+{% block nav %} 
+    <a href='/'><button class='menu-button'>Main Menu</button></a>
+{% endblock %} 
+

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>{{set_name.replace('_', ' ')}}</title>
+{% endblock %}
+
+{% block main %}
+    <h2 class='page-header'>Flash Card</h2>
+    <h4>Question</h4>
+    <p class='question'>" {{card[1]}} "</p>
+    <h4>Your Answer</h4>
+    <textarea id='your-answer' placeholder='Your Answer'></textarea>
+    <p id='your-answer-final'></p>
+    <br>
+    <button id='confirm-answer' class='practice-button'>Confirm Answer</button>
+    <div id='answer-div'>
+        <h4>Actual Answer</h4>
+        <p>{{card[2]}}</p>
+    </div>
+    <br>
+    <br>
+    <p class='page-sub-header'>Set: {{set_name.replace('_', ' ')}}</p>
+{% endblock %}
+
+{% block nav %}
+    <a href='/practice/{{set_name}}'><button class='practice-button'>Next Card</button></a>
+    <br>
+    <a href='/create-card-prompt/{{set_name}}'><button class='neutral-button'>Create Card</button></a>
+    <br>
+    <a id='delete-card' href='/delete-card/{{set_name}}{{card[0]}}'><button class='delete-button'>Delete Card</button></a>
+    <br>
+    <a href='/'><button class='menu-button'>Main Menu</button></a>
+{% endblock %}
+
+{% block javascript %} 
+    <script>
+        function show_answer() {
+            document.getElementById('your-answer').style.display = 'none'
+            document.getElementById('your-answer-final').style.display = 'block'
+            document.getElementById('your-answer-final').innerHTML =
+                document.getElementById('your-answer').value
+            document.getElementById('answer-div').style.display = 'block'
+            document.getElementById('confirm-answer').style.display = 'none'
+            return false}   
+            
+            
+        document.getElementById('confirm-answer').addEventListener('click', show_answer)
+    </script>
+
+    <script>
+      document.getElementById('delete-card').
+      addEventListener('click', () => {
+          confirm("Are you sure you want to delete this card?")
+      })
+</script>
+{% endblock %}

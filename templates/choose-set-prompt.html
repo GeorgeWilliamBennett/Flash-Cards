@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Choose Your Set</title>
+{% endblock %} 
+
+{% block main %}
+    <h2 class='page-header'>Choose a Set of Cards</h2>
+    {% for set_name in sets %} 
+        <a href='/practice/{{set_name}}'><button class='practice-button'>{{set_name.replace('_', ' ')}}</button></a>
+        <br>
+    {% endfor %} 
+{% endblock %} 
+
+
+{% block nav %} 
+    <a href='/'><button class='menu-button'>Main Menu</button></a>
+{% endblock %} 

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Name Your Set</title>
+{% endblock %} 
+
+{% block main %}
+    <h2 class='page-header'>Create a Title for the New Set of Cards</h2>
+    <form id='create-set-form' action='/create-new-set' method='POST'>
+        <input type='text' class='text' name='set-name' id='set-name' placeholder="Name"></input>
+        <br>
+        <input class='submit-button' type='submit' value='Submit'>
+    </form>
+{% endblock %} 
+
+
+{% block nav %} 
+    <a href='/'><button class='menu-button'>Main Menu</button></a>
+{% endblock %} 
