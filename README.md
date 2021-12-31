@@ -105,7 +105,7 @@ Lastly go to Google Chrome or whatever browser you use and pass in the link give
 
 <br>
 
-<img alt='main menu' scr='./pics/Main-Menu.png'/>
+<img alt='main menu' scr='./pics/Main-Menu.png' style='text-align: center; height: 300px;'/>
 
 <br>
 
@@ -115,7 +115,7 @@ To use the app first click on the button that says "Create a New Set of Cards". 
 
 <br>
 
-<img alt='write a flash card' scr='./pics/Create-Card.png'/>
+<img alt='write a flash card' scr='./pics/Create-Card.png' style='text-align: center;, height: 300px;' />
 
 <br>
 
@@ -123,7 +123,7 @@ Now you are enabled to practice! After creating a card you will automatically be
 
 <br>
 
-<img alt='warning prompt' scr='./pics/Create-Card.png'/>
+<img alt='warning prompt' scr='./pics/Create-Card.png' style='text-align: center;, height: 300px;'/>
 
 <br>
 
