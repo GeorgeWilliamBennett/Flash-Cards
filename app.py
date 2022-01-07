@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, redirect
 import sqlite3
 
+next_id = 1
+
+
 # load application to a variable
 app = Flask(__name__)
 
