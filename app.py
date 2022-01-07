@@ -4,8 +4,6 @@ import sqlite3
 # load application to a variable
 app = Flask(__name__)
 
-# for id generation
-next_id = 1
 
 # connect to database
 def connect_db():
