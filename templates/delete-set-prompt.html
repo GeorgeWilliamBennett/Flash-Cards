@@ -18,10 +18,5 @@
 {% endblock %} 
 
 {% block javascript %} 
-    <script>
-        document.getElementById('delete-set').
-        addEventListener('click', () => {
-            confirm("Are you sure you want to delete this set of cards?")
-        })
-    </script>
+    <script src="{{ url_for('static', filename='javascript/delete-set.js') }}"></script>
 {% endblock %} 
