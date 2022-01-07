@@ -9,6 +9,8 @@
     <form id='create-set-form' action='/create-new-set' method='POST'>
         <input type='text' class='text' name='set-name' id='set-name' placeholder="Name"></input>
         <br>
+        <p id='error'></p>
+        <br>
         <input class='submit-button' type='submit' value='Submit'>
     </form>
 {% endblock %} 
@@ -16,4 +18,8 @@
 
 {% block nav %} 
     <a href='/'><button class='menu-button'>Main Menu</button></a>
+{% endblock %} 
+
+{% block javascript %} 
+    <script src="{{ url_for('static', filename='javascript/create-set-validation.js') }}"></script>
 {% endblock %} 

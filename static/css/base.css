@@ -1,7 +1,7 @@
 * {
     text-align: center;
     background-color: lightyellow;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header h1 {
@@ -14,6 +14,12 @@ header h1 {
 
 h3, h4, p, textarea {
     font-size: 30px;
+}
+
+p {
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
 }
 
 button, .submit-button {
