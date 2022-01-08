@@ -76,4 +76,4 @@ My name is George Bennett. I completed a datascience bootcamp with <a href='http
 
 <br>
 
-<a href='https://github.com/GeorgeWilliamBennett/'><img align="left" alt="GitHub" width="52px" src="https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png" /></a><a href='https://www.linkedin.com/in/george-w-bennett/'><img align="left" alt="inkedIn" width="52px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" /></a>
+<a href='https://github.com/GeorgeWilliamBennett/'><img align="left" alt="GitHub" width="52px" src="https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png" /></a><a href='https://www.linkedin.com/in/george-w-bennett/'><img align="left" alt="inkedIn" width="52px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png" /></a>
