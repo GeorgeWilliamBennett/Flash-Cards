@@ -36,7 +36,7 @@ I used several of my skill-sets in this project including:
 
 # Setup
 
-I have put this app up on <a href="https://www.heroku.com">heroku</a>! Just <a href="https://www.georgesflashcards.herokuapp.com">click here</a> to use!
+I have put this app up on <a href="https://www.heroku.com">heroku</a>! Just <a href="https://georgesflashcards.herokuapp.com/">click here</a> to use!
 
 <div align='center'><img src='./pics/Main-Menu.jpg' style='height: 400px;'/> <br></div>
 
