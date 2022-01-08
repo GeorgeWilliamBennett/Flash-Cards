@@ -52,6 +52,7 @@ def create_set_prompt():
 @app.route('/create-new-set', methods=['POST'])
 def create_new_set():
     set_name = request.form['set-name']
+    set_name = set_name.replace(' ', '_')
     set_names = db.session.query(Set).filter(Set.name == set_name).all()
     if len(set_names) < 1:
         data = Set(set_name)
