@@ -7,9 +7,7 @@ import numpy as np
 app = Flask(__name__)
 
 # setup SQL Alchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://vojewifjztymtc:397bd7b549f6f30fba45dd31\
-    d2c727861621b9ffbf510890ca9b079da91966d4@ec2-44-194-101-60.compute-1.amazonaws.com:5432/d93\
-    km15gdqa84q"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://vojewifjztymtc:397bd7b549f6f30fba45dd31d2c727861621b9ffbf510890ca9b079da91966d4@ec2-44-194-101-60.compute-1.amazonaws.com:5432/d93km15gdqa84q"
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
