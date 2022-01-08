@@ -34,7 +34,7 @@ I used several of my skill-sets in this project including:
 <br>
 
 # Setup
-I have deployed this app on <a href="heroku.com">heroku! Just <a href="georgesflashcards.herokuapp.com">click here</a> to use!
+I have deployed this app on <a href="https://www.heroku.com">heroku</a>! Just <a href="https://www.georgesflashcards.herokuapp.com">click here</a> to use!
 <br>
 
 <a href='https://github.com/GeorgeWilliamBennett/'>GitHub</a>
