@@ -22,15 +22,17 @@ I was inspired to make this app because I am in college and flash cards are a us
 
 # Skills
 
-I used several of my skill-sets in this project including:
-* Python
-* Flask
-* Jinja 2
-* Javascript
-* SQL
-* HTML
-* CSS
-* UX/UI Design
+<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" /> VS Code <br>
+<img align="left" alt="Python" width="26px" src="https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png" /> Python <br>
+<img align="left" alt="Flask" width="26px" src="https://www.pngfind.com/pngs/m/128-1286693_flask-framework-logo-svg-hd-png-download.png" /> Flask <br>
+<img align="left" alt="Jinja 2" width="26px" src="https://techblog.recochoku.jp/wp-content/uploads/2017/09/jinja2_logo.jpg" /> Jinja 2 <br>
+<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /> Javascript <br>
+<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /> HTML5 <br>
+<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /> CSS3 <br>
+<img align="left" alt="SQL" width="26px" src="https://tse4.mm.bing.net/th?id=OIP.Zw6uLmcKCUVS_AOV_7_wxAHaE7&pid=Api&P=0&w=237&h=159" /> PostgreSQL <br>
+<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" /> Git <br>
+<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /> GitHub <br>
+<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" /> Terminal
 
 <br>
 
@@ -60,10 +62,14 @@ Now you are enabled to practice! After creating a card you will automatically be
 
 # Contact
 
+<img src="./pics/profile_pic.jpg" style='border-radius: 50%;' width="150px">
+
+<br>
+
 My name is George Bennett. I completed a datascience bootcamp with <a href='https://flatironschool.com/'>Flat Iron School</a> and am currently in college pursuing a bachelor's in computer science. My goal is to one day be a professional software engineer or datascientist. 
 
 <br>
 
-<a href='https://github.com/GeorgeWilliamBennett/'>GitHub</a>
+<a href='https://github.com/GeorgeWilliamBennett/'><img align="left" alt="GitHub" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" /></a>
 
-<a href='https://www.linkedin.com/feed/'>LinkedIn</a>
+<a href='https://www.linkedin.com/in/george-w-bennett/'><img align="left" alt="inkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" /></a>
