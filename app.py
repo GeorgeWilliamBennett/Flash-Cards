@@ -1,18 +1,36 @@
 from flask import Flask, render_template, request, redirect
-import sqlite3
-
-next_id = 1
-
+from flask_sqlalchemy import SQLAlchemy
+import psycopg2
+import numpy as np
 
 # load application to a variable
 app = Flask(__name__)
 
+# setup SQL Alchemy
+app.config['SQLALCHEMY_DATABASE_URI'] = 0
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# connect to database
-def connect_db():
-    con = sqlite3.connect('flashcards.db')
-    cr = con.cursor()
-    return cr, con
+db = SQLAlchemy(app)
+
+class Set(db.Model):
+    __tablename__ = 'set'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), unique=True)
+
+    def __init__(self, name):
+        self.name = name
+
+class FlashCard(db.Model):
+    __tablename__ = 'flashcard'
+    id = db.Column(db.Integer, primary_key=True)
+    setId = db.Column(db.Integer)
+    question = db.Column(db.String(300))
+    answer = db.Column(db.String(300))
+
+    def __init__(self, setId, question, answer):
+        self.setId = setId
+        self.question = question
+        self.answer = answer
 
 # render a page with a simple message
 def response_page(msg):
@@ -32,34 +50,20 @@ def create_set_prompt():
 @app.route('/create-new-set', methods=['POST'])
 def create_new_set():
     set_name = request.form['set-name']
-    set_name = set_name.replace(' ', '_')
-    set_name = set_name.replace('-', '')
-    query = f"""
-        CREATE TABLE {set_name} (
-            id INT NOT NULL,
-            question VARCHAR(255) NOT NULL,
-            answer VARCHAR(255) NOT NULL
-        )
-        """
-    try: 
-        cr, con= connect_db()
-        cr.execute(query)
-        con.commit()
-        cr.close()
-    except:
+    set_names = db.session.query(Set).filter(Set.name == set_name).all()
+    if len(set_names) < 1:
+        data = Set(set_name)
+        db.session.add(data)
+        db.session.commit()
+        return redirect(f'/practice/{set_name}')
+    else:
         return response_page('There is Already a Set of Cards with that Name')
-    return redirect(f'/practice/{set_name}')
+    
 
 # choosing a set
 @app.route('/choose-set-prompt')
 def choose_set_prompt():
-    cr, _ = connect_db()
-    query = """
-        SELECT name FROM sqlite_schema WHERE type='table' ORDER BY name
-        """
-    cr.execute(query)
-    sets = [x[0] for x in cr.fetchall()]
-    cr.close()
+    sets = [x.name for x in db.session.query(Set).all()]
     if sets:
         return render_template('choose-set-prompt.html', sets=sets)
     else:
@@ -73,79 +77,47 @@ def create_card_prompt(set_name):
 
 @app.route('/create-card/<set_name>', methods=['POST'])
 def create_card(set_name):
+    setId = db.session.query(Set).filter(Set.name == set_name).first().id
     question = request.form['question-prompt']
     answer = request.form['answer-prompt']
-    cr, con = connect_db()
-    query = f"""
-        INSERT INTO {set_name} (id, question, answer) VALUES ({globals()['next_id']}, '{question}', '{answer}')
-        """
-    cr.execute(query)
-    con.commit()
-    cr.close()
-    globals()['next_id'] += 1
+    db.session.add(FlashCard(setId, question, answer))
+    db.session.commit()
     return redirect(f'/practice/{set_name}')
 
 # practice
 @app.route('/practice/<set_name>')
 def practice(set_name):
-    query = f"""
-        SELECT * FROM {set_name} ORDER
-        BY RANDOM() LIMIT 1
-        """
-    cr, _ = connect_db()
-    cr.execute(query)
-    rand_card = False
+    setId = db.session.query(Set).filter(Set.name == set_name).first().id
+    cards = db.session.query(FlashCard).filter(FlashCard.setId == setId).all()
     try: 
-        rand_card = cr.fetchall()[0]
+        rand_card = np.random.choice(cards)
     except:
-        pass
-    cr.close()
+        rand_card = False
     if rand_card:
         return render_template('practice.html', card=rand_card, set_name=set_name)
     else:
         return redirect(f'/create-card-prompt/{set_name}')
 
 # delete card
-@app.route('/delete-card/<set_name><card_id>')
+@app.route('/delete-card/<set_name>/<card_id>')
 def delete_card(set_name, card_id):
-    query = f"""
-        DELETE FROM {set_name} WHERE id = {card_id}
-        """
-    cr, con = connect_db()
-    cr.execute(query)
-    con.commit()
-    query2 = f"""
-        SELECT * FROM {set_name}
-        """
-    cr.execute(query2)
-    rows = cr.fetchall()
-    if rows:
-        return redirect(f'/practice/{set_name}')
-    else:
-        return response_page('All Cards in this Set Have Been Deleted')
+    delete_this = db.session.query(FlashCard).filter(FlashCard.id == card_id).first()
+    db.session.delete(delete_this)
+    db.session.commit()
+    return redirect(f'/practice/{set_name}')
 
 
 @app.route('/delete-set-prompt')
 def delete_set_prompt():
-    cr, _ = connect_db()
-    query = """
-        SELECT name FROM sqlite_schema WHERE type='table' ORDER BY name
-        """
-    cr.execute(query)
-    sets = [x[0] for x in cr.fetchall()]
-    cr.close()
+    sets = [x.name for x in db.session.query(Set).all()]
     return render_template('delete-set-prompt.html', sets=sets)
 
 # delete set of cards
 @app.route('/delete-set/<set_name>')
 def delete_set(set_name):
-    query = f"""
-        DROP TABLE {set_name}
-        """
-    cr, con = connect_db()
-    cr.execute(query)
-    con.commit()
-    cr.close()
+    delete_this = db.session.query(Set).filter(Set.name == set_name).first()
+    db.session.delete(delete_this)
+    db.session.commit()
     return response_page('Set Deleted')
 
 # run program
