@@ -2,12 +2,13 @@ from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 import psycopg2
 import numpy as np
+import os
 
 # load application to a variable
 app = Flask(__name__)
 
 # setup SQL Alchemy
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://vojewifjztymtc:397bd7b549f6f30fba45dd31d2c727861621b9ffbf510890ca9b079da91966d4@ec2-44-194-101-60.compute-1.amazonaws.com:5432/d93km15gdqa84q"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
